@@ -1,58 +1,69 @@
+:root {
+    --space:5em;
+}
+
+html {
+    font-size:14px;
+
+}
+
 body {
-    font-family: monospace;
-    text-align: center;
-    padding: 40px;
-    background: #21232d;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: #fcfcfc;
+    padding:var(--space);
+}
+
+.link-div {
+    border-bottom:1px dashed #ccc;
+    padding-bottom:2rem;
+    margin-bottom:2rem;
 }
 
 img {
     display: block;
-    top: 20px;
+    top: 2rem;
     margin: 0 auto;
     position: absolute;
     opacity: 50%;
-    right: 20px;
+    right: 2rem;
 }
 
 img:hover{
     opacity: 100%;
 }
 
-a.pin-link{
+a.pin-link {
     text-decoration: none;
-    line-height: 30px;
-    color: #d8d8d6;
+    line-height: 2rem;
+    color: #000000;
+    font-family: monospace;
 }
 
-h1 {
-    color: #d8d8d6;
-    font-size: 2.5em;
-    margin-bottom: -9px
+a.pin-link:hover {
+    color:#f92672;
 }
 
-#content{
-    font-size: 1.5em;
+p.link-extra {
+    margin:1rem 0px 0.5rem;
+}
+
+.content{
+    font-size: 1.5em;  
     text-align: left;
-    min-width: 768px;
-    width: 70%;
-    max-width: 1000px;
-    margin: 50px auto 0px auto;
+    margin: 0 var(--space);
+    width:100%;
 }
 
-#content .link-desc {
+.content .link-desc {
     text-decoration: none;
     font-size: 1.15em;
     margin: 15px 0px -15px 0px;
-    color: #4eff96;
+    color: #1d34ff;
 }
 
-#content .link-desc:hover{
+.content .link-desc:hover{
     border-radius: 4px;
     color: #f92672;;
-}
-
-#content div{
-    padding: 0px 0px 21px 0px;
 }
 
 input {
@@ -88,3 +99,30 @@ button {
 #status{
     color: #d8d8d6;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
